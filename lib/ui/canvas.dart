@@ -20,6 +20,7 @@ class _CanvasPanelState extends State<CanvasPanel> {
           height: constraints.maxHeight,
           child: Center(
             child: MouseRegion(
+              cursor: SystemMouseCursors.none,
               onHover: (event) {
                 MousePosHook().handleMousePos(
                   event.localPosition.dx.toInt(),
